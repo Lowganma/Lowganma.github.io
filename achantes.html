@@ -1,0 +1,382 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+-->
+<html>
+	<head>
+		<title>Achantes | Lowganma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<meta
+			name="description"
+			content="Achantes: espacio virtual colaborativo para dibujar, compartir y escuchar música en tiempo real."
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+
+				<a href="index.html" class="image avatar">
+					<img src="images/avatar.jpg" alt="Lowganma" />
+				</a>
+
+				<h1>
+					<strong>Lowganma</strong><br />
+					Creador de contenido &<br />
+					desarrollador indie.
+				</h1>
+
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section>
+				<ul class="actions">
+					<li>
+						<a href="index.html#proyectos" class="button primary">
+							← Volver al Portafolio
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Hero -->
+			<section>
+
+				<header class="major">
+
+					<h1>Achantes</h1>
+
+					<h2>
+						Espacio Virtual Colaborativo en Tiempo Real
+					</h2>
+
+				</header>
+
+				<p>
+					<strong>
+						Un lugar digital para entrar, relajarse, crear y compartir
+						con otras personas sin convertir cada encuentro en una reunión formal.
+					</strong>
+				</p>
+
+				<p>
+					Achantes combina interacción social, dibujo colaborativo y contenido
+					sincronizado dentro de salas virtuales personalizables.
+				</p>
+
+			</section>
+
+			<!-- Problema -->
+			<section>
+
+				<h2>01. El problema</h2>
+
+				<p>
+					Discord, Zoom y otras plataformas permiten hablar, transmitir pantalla
+					o escribir mensajes, pero la experiencia continúa organizada alrededor
+					del concepto tradicional de llamada o reunión.
+				</p>
+
+				<p>
+					Para artistas, creadores de contenido, dibujantes o grupos de amigos,
+					eso deja un espacio interesante sin cubrir:
+					un entorno donde las personas puedan simplemente pasar el rato
+					mientras realizan actividades conjuntamente.
+				</p>
+
+				<blockquote>
+					La intención de Achantes no es organizar una reunión.
+					Es crear un lugar digital donde puedan suceder cosas.
+				</blockquote>
+
+			</section>
+
+			<!-- Solución -->
+			<section>
+
+				<h2>02. La solución</h2>
+
+				<p>
+					Achantes propone salas virtuales donde diferentes experiencias
+					conviven dentro del mismo espacio.
+				</p>
+
+				<div class="row">
+
+					<article class="col-6 col-12-small">
+						<h3>🎨 Canvas colaborativo</h3>
+						<p>
+							Los usuarios pueden dibujar conjuntamente y observar
+							los cambios de los demás participantes en tiempo real.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🖱️ Cursores sincronizados</h3>
+						<p>
+							La posición e interacción de diferentes participantes
+							puede visualizarse dentro del espacio compartido.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🎵 Audio compartido</h3>
+						<p>
+							Los integrantes de una sala pueden escuchar contenido
+							de manera sincronizada.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🏠 Salas personalizables</h3>
+						<p>
+							Cada comunidad puede tener su propio espacio
+							y evolucionar hacia una identidad independiente.
+						</p>
+					</article>
+
+				</div>
+
+			</section>
+
+			<!-- Demo -->
+			<section>
+
+				<h2>03. Demostración</h2>
+
+				<p>
+					El prototipo actual demuestra sincronización de salas,
+					cursores, lienzo colaborativo y reproducción de contenido.
+				</p>
+
+				<span class="image fit">
+					<img
+						src="images/proyectos/achantes/canvas-realtime.gif"
+						alt="Canvas colaborativo de Achantes funcionando en tiempo real"
+					/>
+				</span>
+
+				<p>
+					<em>
+						Espacio preparado para incluir el GIF o video real
+						del prototipo.
+					</em>
+				</p>
+
+			</section>
+
+			<!-- Stack -->
+			<section>
+
+				<h2>04. Arquitectura & Stack Tecnológico</h2>
+
+				<div class="row">
+
+					<article class="col-6 col-12-small">
+						<h3>TypeScript</h3>
+
+						<p>
+							Permite desarrollar una aplicación web compleja
+							con tipado estático y mejor control de estructuras,
+							eventos y estados.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>Supabase</h3>
+
+						<p>
+							Proporciona autenticación, base de datos relacional
+							y servicios de sincronización en tiempo real.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>WebSockets / Realtime</h3>
+
+						<p>
+							Permiten transmitir eventos rápidamente entre
+							los participantes de una misma sala.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>HTML5 Canvas</h3>
+
+						<p>
+							Base gráfica del sistema colaborativo de dibujo
+							y experimentación visual.
+						</p>
+					</article>
+
+				</div>
+
+				<h3>Concepto de arquitectura</h3>
+
+				<pre><code>
+Usuario A ─┐
+           │
+Usuario B ─┼──→ Sala Achantes
+           │         ↓
+Usuario C ─┘    Supabase Realtime
+                     ↓
+          Canvas · Cursores · Audio
+				</code></pre>
+
+			</section>
+
+			<!-- Estado -->
+			<section>
+
+				<h2>05. Estado actual</h2>
+
+				<p>
+					<strong>Estado: prototipo funcional en desarrollo.</strong>
+				</p>
+
+				<ul>
+					<li>Creación y acceso a salas.</li>
+					<li>Sincronización de usuarios.</li>
+					<li>Canvas compartido.</li>
+					<li>Sincronización de cursores.</li>
+					<li>Reproductor de contenido sincronizado.</li>
+				</ul>
+
+			</section>
+
+			<!-- Roadmap -->
+			<section>
+
+				<h2>06. Roadmap</h2>
+
+				<ul>
+
+					<li>
+						<strong>Integraciones musicales:</strong>
+						conectar servicios y APIs para ampliar
+						la experiencia de escucha compartida.
+					</li>
+
+					<li>
+						<strong>Salas persistentes:</strong>
+						crear espacios permanentes para comunidades.
+					</li>
+
+					<li>
+						<strong>Comunidades de streamers:</strong>
+						entornos personalizados para creadores de contenido.
+					</li>
+
+					<li>
+						<strong>Sistema de permisos:</strong>
+						administradores, colaboradores, artistas e invitados.
+					</li>
+
+					<li>
+						<strong>Persistencia creativa:</strong>
+						guardar lienzos y actividades realizadas dentro de cada sala.
+					</li>
+
+				</ul>
+
+			</section>
+
+			<!-- Patrocinio -->
+			<section>
+
+				<header class="major">
+					<h2>Ayuda a construir Achantes</h2>
+				</header>
+
+				<p>
+					Una plataforma colaborativa en tiempo real necesita
+					infraestructura disponible continuamente.
+				</p>
+
+				<p>
+					El apoyo al proyecto permitirá cubrir servidores,
+					servicios de Supabase, almacenamiento y mantenimiento
+					a medida que aumente el número de usuarios.
+				</p>
+
+				<ul class="actions stacked">
+
+					<li>
+						<a href="#" class="button primary fit">
+							Ver proyecto / GitHub
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="button fit">
+							☕ Apoyar en Ko-fi
+						</a>
+					</li>
+
+					<li>
+						<a href="mailto:lowganma@email.com" class="button fit">
+							Contactarme
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+
+		</div>
+
+		<footer id="footer">
+			<div class="inner">
+
+				<ul class="icons">
+
+					<li>
+						<a
+							href="https://github.com/Lowganma"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="icon brands fa-github"
+						>
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="mailto:lowganma@email.com"
+							class="icon solid fa-envelope"
+						>
+							<span class="label">Email</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; Lowganma</li>
+					<li>
+						Design:
+						<a href="https://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
+
+			</div>
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

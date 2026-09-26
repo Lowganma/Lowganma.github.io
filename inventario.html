@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+	<head>
+		<title>Inventario_v1 | Lowganma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="description"
+			content="Inventario_v1: sistema abierto de gestión comercial local desarrollado con Django para pequeños negocios."
+		/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Header / Menú lateral -->
+		<header id="header">
+			<div class="inner">
+
+				<a href="index.html" class="image avatar">
+					<img src="images/avatar.jpg" alt="Lowganma" />
+				</a>
+
+				<h1>
+					<strong>Lowganma</strong><br />
+					Creador de contenido &<br />
+					desarrollador indie.
+				</h1>
+
+			</div>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Volver -->
+			<section>
+				<ul class="actions">
+					<li>
+						<a href="index.html#proyectos" class="button primary">
+							← Volver al Portafolio
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Hero -->
+			<section id="hero">
+
+				<header class="major">
+					<h1>
+						Inventario_v1
+					</h1>
+
+					<h2>
+						Sistema Abierto de Gestión Comercial Local
+					</h2>
+				</header>
+
+				<p>
+					Una herramienta pensada para que un pequeño negocio pueda controlar
+					<strong>ventas, inventario, clientes y caja</strong>
+					sin depender de costosas suscripciones ni de una conexión permanente
+					a Internet.
+				</p>
+
+				<p>
+					<strong>
+						La idea es sencilla: convertir cualquier computadora del negocio
+						en el centro de un sistema accesible desde teléfonos, tablets y laptops
+						conectados a la misma red Wi-Fi.
+					</strong>
+				</p>
+
+				<ul class="actions">
+					<li>
+						<a
+							href="https://github.com/Lowganma/Inventario_v1"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="button primary"
+						>
+							Ver código en GitHub
+						</a>
+					</li>
+				</ul>
+
+			</section>
+
+			<!-- Problema -->
+			<section id="problema">
+
+				<h2>01. El problema</h2>
+
+				<p>
+					En Venezuela y en buena parte de Latinoamérica, muchos pequeños
+					emprendimientos todavía administran sus productos, ventas y cuentas
+					con lápiz, papel, cuadernos o archivos de Excel independientes.
+				</p>
+
+				<p>
+					El problema no necesariamente es la falta de tecnología.
+					Muchas soluciones comerciales existentes están pensadas para empresas
+					con mayor presupuesto, requieren pagos mensuales, suscripciones en dólares,
+					conectividad permanente o procesos de configuración demasiado complejos
+					para un pequeño comercio.
+				</p>
+
+				<p>
+					Esto crea una situación frecuente:
+					el comerciante necesita digitalizarse, pero la herramienta termina
+					siendo más difícil de administrar que el propio negocio.
+				</p>
+
+				<blockquote>
+					¿Y si el sistema pudiera instalarse en una computadora,
+					funcionar dentro del propio local y ser consultado desde cualquier
+					dispositivo conectado a su Wi-Fi?
+				</blockquote>
+
+			</section>
+
+			<!-- Solución -->
+			<section id="solucion">
+
+				<h2>02. La solución</h2>
+
+				<p>
+					<strong>Inventario_v1</strong> es un sistema de gestión comercial
+					construido sobre Django que puede ejecutarse dentro de la red local
+					del negocio.
+				</p>
+
+				<p>
+					La computadora principal funciona como servidor local y los demás
+					dispositivos pueden acceder al sistema mediante el navegador.
+					De esta manera, un trabajador puede registrar una venta desde un teléfono
+					mientras otra persona revisa el inventario desde una laptop.
+				</p>
+
+				<div class="row">
+
+					<div class="col-6 col-12-small">
+						<h3>Productos</h3>
+						<p>
+							Registro y administración de productos disponibles dentro del negocio.
+						</p>
+					</div>
+
+					<div class="col-6 col-12-small">
+						<h3>Ventas</h3>
+						<p>
+							Registro de operaciones comerciales con actualización de inventario.
+						</p>
+					</div>
+
+					<div class="col-6 col-12-small">
+						<h3>Clientes</h3>
+						<p>
+							Organización de información básica relacionada con los compradores.
+						</p>
+					</div>
+
+					<div class="col-6 col-12-small">
+						<h3>Caja Chica</h3>
+						<p>
+							Control de movimientos cotidianos de dinero dentro del negocio.
+						</p>
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- Demo -->
+			<section id="demo">
+
+				<h2>03. Demostración</h2>
+
+				<p>
+					Una de las demostraciones principales del proyecto será registrar
+					una venta desde un teléfono conectado a la red local y observar
+					cómo el sistema refleja inmediatamente la operación desde la computadora
+					principal.
+				</p>
+
+				<span class="image fit">
+					<img
+						src="images/proyectos/inventario/venta-movil.gif"
+						alt="Demostración de una venta realizada desde un teléfono en Inventario_v1"
+					/>
+				</span>
+
+				<p>
+					<em>
+						Si todavía no tienes el GIF, puedes colocar temporalmente una captura
+						con el mismo nombre o cambiar esta ruta cuando prepares la demostración.
+					</em>
+				</p>
+
+			</section>
+
+			<!-- Arquitectura -->
+			<section id="arquitectura">
+
+				<h2>04. Arquitectura & Stack Tecnológico</h2>
+
+				<div class="row">
+
+					<article class="col-6 col-12-small">
+						<h3>🐍 Python</h3>
+						<p>
+							Lenguaje principal del backend. Permite mantener una base de código
+							clara, escalable y ampliamente documentada.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>⚙️ Django</h3>
+						<p>
+							Framework principal utilizando arquitectura MVT.
+							Se encarga de modelos de datos, lógica del negocio,
+							vistas, seguridad y administración.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>📱 Bootstrap</h3>
+						<p>
+							Permite construir una interfaz responsive que pueda utilizarse
+							desde computadoras, tablets y teléfonos.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🗄️ SQLite / PostgreSQL</h3>
+						<p>
+							SQLite facilita instalaciones locales pequeñas,
+							mientras PostgreSQL permite escalar el sistema cuando el proyecto
+							requiera una infraestructura mayor.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🐳 Docker</h3>
+						<p>
+							El objetivo de distribución es empaquetar el sistema para reducir
+							al mínimo los pasos necesarios para instalarlo y ejecutarlo.
+						</p>
+					</article>
+
+				</div>
+
+				<h3>Flujo de funcionamiento</h3>
+
+				<pre><code>
+Teléfono / Tablet / Laptop
+          ↓
+      Red Wi-Fi local
+          ↓
+     Servidor Django
+          ↓
+      Base de datos
+          ↓
+Inventario · Ventas · Clientes · Caja
+				</code></pre>
+
+			</section>
+
+			<!-- Estado -->
+			<section id="estado">
+
+				<h2>05. Estado Actual</h2>
+
+				<p>
+					<strong>Estado: desarrollo activo.</strong>
+				</p>
+
+				<h3>Actualmente funcional</h3>
+
+				<ul>
+					<li>Gestión de productos.</li>
+					<li>Registro de ventas.</li>
+					<li>Administración de clientes.</li>
+					<li>Control de caja chica.</li>
+					<li>Interfaz accesible desde dispositivos dentro de la red local.</li>
+				</ul>
+
+				<h3>Roadmap</h3>
+
+				<ul>
+					<li>
+						<strong>Restock / Compras:</strong>
+						registro completo de reposición de inventario.
+					</li>
+
+					<li>
+						<strong>Reportes financieros:</strong>
+						resúmenes de ventas, ingresos, egresos y comportamiento comercial.
+					</li>
+
+					<li>
+						<strong>Alquileres:</strong>
+						módulo para pequeños negocios que también manejan productos o equipos alquilados.
+					</li>
+
+					<li>
+						<strong>Docker:</strong>
+						empaquetado definitivo del proyecto.
+					</li>
+
+					<li>
+						<strong>Docker Hub:</strong>
+						publicación de una imagen oficial para facilitar su instalación.
+					</li>
+				</ul>
+
+			</section>
+
+			<!-- Open Source -->
+			<section id="open-source">
+
+				<h2>06. ¿Por qué Open Source?</h2>
+
+				<p>
+					Inventario_v1 busca ser una herramienta accesible para pequeños comerciantes
+					que normalmente no pueden justificar el costo mensual de un software empresarial.
+				</p>
+
+				<p>
+					El objetivo del proyecto es mantener una versión abierta que pueda
+					instalarse, estudiarse y mejorarse libremente.
+				</p>
+
+				<p>
+					El patrocinio permitiría dedicar más tiempo al desarrollo,
+					documentación, empaquetado y mantenimiento sin trasladar esos costos
+					a los comerciantes que utilizan la herramienta.
+				</p>
+
+			</section>
+
+			<!-- CTA -->
+			<section id="apoyar">
+
+				<header class="major">
+					<h2>Apoya el desarrollo de Inventario_v1</h2>
+				</header>
+
+				<p>
+					Si eres desarrollador, comerciante, creador o simplemente quieres
+					apoyar herramientas Open Source enfocadas en pequeños negocios,
+					puedes colaborar con el proyecto.
+				</p>
+
+				<ul class="actions stacked">
+
+					<li>
+						<a
+							href="https://github.com/Lowganma/Inventario_v1"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="button primary fit"
+						>
+							Ver proyecto en GitHub
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="button fit">
+							☕ Apoyar en Ko-fi
+						</a>
+					</li>
+
+					<li>
+						<a href="mailto:lowganma@email.com" class="button fit">
+							Contactarme
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+
+				<ul class="icons">
+					<li>
+						<a
+							href="https://github.com/Lowganma"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="icon brands fa-github"
+						>
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="mailto:lowganma@gmail.com"
+							class="icon solid fa-envelope"
+						>
+							<span class="label">Email</span>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; Lowganma</li>
+					<li>
+						Design:
+						<a href="https://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
+
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

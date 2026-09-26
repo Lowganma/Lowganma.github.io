@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+-->
+<html>
+	<head>
+
+		<title>Extraction BR Mobile | Lowganma</title>
+
+		<meta charset="utf-8" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+
+		<meta
+			name="description"
+			content="Extraction BR Mobile: devlog de un videojuego indie competitivo desarrollado con Godot Engine 4."
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+
+	<body class="is-preload">
+
+		<header id="header">
+			<div class="inner">
+
+				<a href="index.html" class="image avatar">
+					<img src="images/avatar.jpg" alt="Lowganma" />
+				</a>
+
+				<h1>
+					<strong>Lowganma</strong><br />
+					Creador de contenido &<br />
+					desarrollador indie.
+				</h1>
+
+			</div>
+		</header>
+
+		<div id="main">
+
+			<section>
+
+				<ul class="actions">
+
+					<li>
+						<a href="index.html#proyectos" class="button primary">
+							← Volver al Portafolio
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+
+			<!-- Hero -->
+			<section>
+
+				<header class="major">
+
+					<h1>
+						Extraction BR Mobile
+					</h1>
+
+					<h2>
+						Devlog de Videojuego Indie en Godot 4
+					</h2>
+
+				</header>
+
+				<p>
+					Un videojuego competitivo para Android que combina
+					<strong>Battle Royale, extracción, exploración y combate basado en habilidad</strong>
+					dentro de escenarios low-poly optimizados para dispositivos móviles.
+				</p>
+
+				<p>
+					<strong>
+						No estoy intentando reconstruir simplemente un juego anterior:
+						estoy utilizando lo aprendido durante ese análisis para diseñar
+						una arquitectura nueva desde cero.
+					</strong>
+				</p>
+
+			</section>
+
+			<!-- Origen -->
+			<section>
+
+				<h2>01. El origen</h2>
+
+				<p>
+					El proyecto comenzó estudiando técnicamente un APK del videojuego NFT
+					<strong>Overlord</strong>.
+				</p>
+
+				<p>
+					Durante ese proceso se exploraron sus recursos gráficos,
+					modelos 3D y estructura general con el objetivo de comprender
+					cómo estaba construido el producto.
+				</p>
+
+				<p>
+					Los assets extraídos fueron inicialmente organizados y procesados
+					utilizando Unity y herramientas de edición 3D.
+				</p>
+
+				<p>
+					Sin embargo, el análisis reveló un problema importante:
+					parte de la arquitectura dependía de componentes de red cerrados,
+					incluyendo Photon, mientras el proyecto no disponía del código fuente
+					necesario para controlar realmente su funcionamiento.
+				</p>
+
+				<p>
+					Continuar intentando reconstruir una arquitectura ajena se convirtió
+					en una limitación.
+				</p>
+
+				<blockquote>
+					La decisión fue abandonar la dependencia de esa arquitectura
+					y reconstruir el proyecto sobre una base completamente controlable.
+				</blockquote>
+
+			</section>
+
+			<!-- Solución -->
+			<section>
+
+				<h2>02. La nueva dirección</h2>
+
+				<p>
+					Extraction BR Mobile está siendo reconstruido desde cero
+					utilizando <strong>Godot Engine 4</strong>.
+				</p>
+
+				<p>
+					El objetivo es crear un videojuego de extracción competitivo
+					diseñado específicamente para dispositivos Android.
+				</p>
+
+				<div class="row">
+
+					<article class="col-6 col-12-small">
+						<h3>🎮 Combate basado en habilidad</h3>
+
+						<p>
+							La experiencia busca priorizar posicionamiento,
+							movimiento y ejecución del jugador.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>📱 Mobile First</h3>
+
+						<p>
+							La interfaz y los controles están diseñados
+							desde el inicio pensando en pantallas táctiles.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🧊 Low Poly</h3>
+
+						<p>
+							El estilo gráfico facilita mantener identidad visual
+							mientras se reducen costos de renderizado.
+						</p>
+					</article>
+
+					<article class="col-6 col-12-small">
+						<h3>🧭 Vista isométrica</h3>
+
+						<p>
+							La cámara permite visualizar claramente
+							el entorno, enemigos y zonas de combate.
+						</p>
+					</article>
+
+				</div>
+
+			</section>
+
+			<!-- Demo -->
+			<section>
+
+				<h2>03. Demostración</h2>
+
+				<p>
+					El prototipo actual ya permite probar movimiento mediante
+					controles táctiles utilizando un joystick virtual.
+				</p>
+
+				<span class="image fit">
+
+					<img
+						src="images/proyectos/godot/joystick-mobile.gif"
+						alt="Prototipo móvil de Extraction BR Mobile desarrollado en Godot 4"
+					/>
+
+				</span>
+
+				<p>
+					<em>
+						Espacio reservado para mostrar el gameplay real
+						del prototipo ejecutándose en Android.
+					</em>
+				</p>
+
+			</section>
+
+			<!-- Stack -->
+			<section>
+
+				<h2>04. Stack Tecnológico</h2>
+
+				<div class="row">
+
+					<article class="col-6 col-12-small">
+
+						<h3>Godot Engine 4</h3>
+
+						<p>
+							Motor principal del videojuego.
+							Su naturaleza Open Source permite tener mayor control
+							sobre la arquitectura y el proceso de desarrollo.
+						</p>
+
+					</article>
+
+					<article class="col-6 col-12-small">
+
+						<h3>GDScript</h3>
+
+						<p>
+							Lenguaje utilizado para implementar movimiento,
+							interacción, sistemas de gameplay y lógica general.
+						</p>
+
+					</article>
+
+					<article class="col-6 col-12-small">
+
+						<h3>Blender</h3>
+
+						<p>
+							Utilizado para limpiar, revisar y optimizar
+							modelos 3D antes de introducirlos al pipeline de Godot.
+						</p>
+
+					</article>
+
+					<article class="col-6 col-12-small">
+
+						<h3>Android Export</h3>
+
+						<p>
+							El proyecto está diseñado pensando en distribución
+							y pruebas directamente sobre dispositivos Android.
+						</p>
+
+					</article>
+
+				</div>
+
+			</section>
+
+			<!-- Pipeline -->
+			<section>
+
+				<h2>05. Pipeline de Assets</h2>
+
+				<p>
+					Uno de los mayores aprendizajes del proyecto ha sido construir
+					un flujo adecuado para reutilizar, limpiar y optimizar modelos 3D.
+				</p>
+
+				<pre><code>
+Asset 3D
+   ↓
+Blender
+   ↓
+Limpieza de geometría
+   ↓
+Optimización
+   ↓
+Exportación
+   ↓
+Godot 4
+   ↓
+Materiales / Colisiones / Gameplay
+				</code></pre>
+
+			</section>
+
+			<!-- Estado -->
+			<section>
+
+				<h2>06. Estado actual</h2>
+
+				<p>
+					<strong>Estado: prototipo técnico en desarrollo activo.</strong>
+				</p>
+
+				<ul>
+
+					<li>Proyecto base limpio en Godot 4.</li>
+
+					<li>Movimiento funcional del personaje.</li>
+
+					<li>Joystick virtual para pantalla táctil.</li>
+
+					<li>Pipeline de importación de modelos 3D.</li>
+
+					<li>Optimización inicial de assets.</li>
+
+					<li>Pruebas directas sobre Android.</li>
+
+				</ul>
+
+			</section>
+
+			<!-- Roadmap -->
+			<section>
+
+				<h2>07. Roadmap</h2>
+
+				<h3>Gameplay</h3>
+
+				<ul>
+					<li>Sistema de inventario en partida.</li>
+					<li>Loot de armas y objetos.</li>
+					<li>Combate completo.</li>
+					<li>Mecánicas de extracción.</li>
+					<li>Zonas de riesgo y objetivos.</li>
+				</ul>
+
+				<h3>Multijugador</h3>
+
+				<ul>
+					<li>Arquitectura multiplayer.</li>
+
+					<li>
+						Servidor authoritative para validar
+						acciones críticas del jugador.
+					</li>
+
+					<li>Sincronización de movimiento.</li>
+
+					<li>Pruebas con múltiples jugadores.</li>
+				</ul>
+
+				<h3>Testing</h3>
+
+				<ul>
+
+					<li>Builds Android internas.</li>
+
+					<li>Optimización de rendimiento.</li>
+
+					<li>Pruebas alpha cerradas.</li>
+
+				</ul>
+
+			</section>
+
+			<!-- Devlog -->
+			<section>
+
+				<h2>08. Un proyecto construido en público</h2>
+
+				<p>
+					Este proyecto funciona también como devlog:
+					no quiero mostrar únicamente el producto terminado.
+				</p>
+
+				<p>
+					Quiero documentar decisiones técnicas, errores,
+					prototipos descartados, experimentos y avances.
+				</p>
+
+				<p>
+					El desarrollo mismo forma parte del proyecto.
+				</p>
+
+			</section>
+
+			<!-- Apoyo -->
+			<section>
+
+				<header class="major">
+
+					<h2>
+						Apoya Extraction BR Mobile
+					</h2>
+
+				</header>
+
+				<p>
+					El apoyo a través de Patreon o Ko-fi ayudará a cubrir
+					el tiempo de desarrollo, infraestructura futura,
+					herramientas y pruebas del proyecto.
+				</p>
+
+				<p>
+					Los patrocinadores podrán recibir acceso anticipado
+					a determinadas builds de prueba y aparecer en los créditos
+					del proyecto final según el nivel de apoyo establecido.
+				</p>
+
+				<ul class="actions stacked">
+
+					<li>
+						<a href="#" class="button primary fit">
+							🎮 Seguir el Devlog
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="button fit">
+							☕ Apoyar en Ko-fi
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="button fit">
+							Apoyar en Patreon
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="mailto:lowganma@email.com"
+							class="button fit"
+						>
+							Contactarme
+						</a>
+					</li>
+
+				</ul>
+
+			</section>
+
+		</div>
+
+		<footer id="footer">
+
+			<div class="inner">
+
+				<ul class="icons">
+
+					<li>
+						<a
+							href="https://github.com/Lowganma"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="icon brands fa-github"
+						>
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="mailto:lowganma@email.com"
+							class="icon solid fa-envelope"
+						>
+							<span class="label">Email</span>
+						</a>
+					</li>
+
+				</ul>
+
+				<ul class="copyright">
+
+					<li>&copy; Lowganma</li>
+
+					<li>
+						Design:
+						<a href="https://html5up.net">
+							HTML5 UP
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</footer>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
